@@ -1,0 +1,515 @@
+
+body{
+    margin: 0;
+
+}
+
+
+/*#region HEADER*/ 
+header{
+    position:fixed;
+    width:100%;
+
+}
+.topbar{
+    font-size: var(--fv4);
+    background-color: var(--thmclr-1);
+    color: var(--font-color1);
+}
+.s1{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.topbar p{
+    font-size: var(--fv4);
+    flex-grow:1;
+}
+.topbar img{
+    padding-right: 5px;
+}
+.topbar button{
+    background-color: #671700;
+    color:var(--font-color1)
+}
+
+/* NAVIGATION BAR */
+
+nav{
+    background-color: var(--font-color1);
+    
+}
+.s2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav img{
+    width: 18rem;
+    height: 7rem;
+    object-fit: contain;
+}
+nav li{
+    display:inline-block;
+}
+
+/*#endregion*/
+
+/*#region FOOTER*/
+  
+
+/* footer p,h3,ul,li,a{
+    color:white;
+    list-style-type: none;
+    text-decoration: none;
+
+} */
+
+/*#region FOOTER*/
+
+footer{
+    color:var(--font-color1);
+    font-size:x-small;
+}
+.s8{
+    background-color: #001d53;
+    border-top:18px solid   #da3100;
+}
+.footerbar{
+    z-index: -1;
+}
+.btn1{
+    padding: 20px 30px;
+    background-color: #da3100;
+    color:white;
+    cursor:pointer;
+    border: 0;
+    position: absolute;
+    left:40%;
+    z-index:1;
+    font-weight: bold;
+    font-size: small;
+    z-index: 0;
+}
+.s9{
+    background-color: #001d53;
+}
+.box{ /*Is container ke saare child height pe work kar rahay hain, if height nai do tw positions sahi nai arahin*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:150px 0 0 0;
+}
+
+.sec-one{
+    /*Is main address ko different lines main karne ke liay <br> use kia tha, iske alawa koi technique?*/
+    /* Is main  sirf <a>  pe different font family lagayi hai phr bhi para heading ka font alag alag hai*/
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:15% 0;
+    padding-right: 10%;
+}
+.sec-two{ 
+    display:flex;
+    flex-direction: column;
+    width:20%;
+}
+
+
+.sec-two ul{ /*spacing main hit and trial karna para, padding, height and gap ko use karke spacing set kari*/
+    padding-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 44%;
+    gap: 0% 0%;     
+}
+.sec-two ul li a{
+    color:white;
+}
+.sec-three{
+    display:flex;
+    flex-direction: column;
+    gap:10% 0;
+    width:200px;
+}
+.sec-three p img{
+    padding:40px 0 0 0;
+}
+
+.sec-four{
+    display: flex;
+    align-items: flex-end;  
+}
+#fperson{
+    height: 80%;
+    width:80%;
+}
+.s10{
+    background-color: #da3100;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+}
+.copyright p{
+    font-size: xx-small;
+}
+/*#endregion*/
+
+
+
+/*#region MAIN*/
+
+/* ******************************* PAGE 1 ************************************************************* */
+/*#region page1*/
+
+.s3{
+    background:linear-gradient(to right,rgba(33,53,78,1),rgba(33,53,78,0.4)), url(/Images/Repairing.png);
+    background-repeat: no-repeat cover center;
+    background-size: cover;
+    background-position: center;
+    margin-top:105px;
+}
+ #page1{
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ 
+ .psec1{
+     display: flex;
+     justify-content: space-between;
+     
+    }
+.pstext{
+    color:var(--font-color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+.pstext hr{
+    border:1px solid var(--font-color1);
+}
+.pstext>*{
+    padding:8px 0;
+}
+.pstext button{
+    background-color:var(--thmclr-1);
+    color:var(--font-color1);
+}
+
+.form{
+    margin:3rem 0;
+    text-align: center;
+    background-color: white;
+}
+
+.form button{
+    background-color: var(--formclr-1);
+    color:var(--font-color1);
+    margin-bottom:3rem;
+}
+.form button:hover{
+    background-color: var(--formclr-2);
+    color:var(--formclr-1)
+}
+.form input[type="submit"]{
+    background-color: var(--thmclr-1);
+    color: var(--font-color1);
+    margin:25px 0;
+}
+.s4{
+    background-color: var(--thmclr-1);
+}
+.psec2{    
+    display: flex;
+    align-items: center;
+    color:var(--font-color1);
+    padding:10px 0;
+ }
+
+.pstext2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.psec2 button{
+    background-color: var(--formclr-1);
+    color:var(--font-color1);
+}
+/*#endregion page1*/
+
+
+/* ******************************* PAGE 2 ************************************************************* */
+/*#region page2*/
+#page2{
+    color:black;
+    background-color: var(--formclr-2);
+}
+.s5{
+    display: flex;
+    justify-content: space-between;
+}
+.p2sec1{
+    display: flex;
+    flex-direction: column;
+}
+.p2sec1 hr{
+    width: 60%;
+    border: 1px solid var(--thmclr-1);
+    margin-bottom: 30px;
+}
+.p2sec1>div{
+    padding:10px 0;
+}
+.p2sec1 img{
+    border-radius: 30px;
+}
+.heatrepair{
+    display: flex;
+    flex-wrap:wrap;
+    width:50rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height:70px;    
+}
+
+.acrepair{
+    width:50rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    height:68px;
+}
+.call{
+    margin:30px 90px;
+}
+.call h2{
+    color:var(--thmclr-1)
+}
+.pg2img{
+    margin-left:40px;
+}
+/*#endregion page2*/
+
+
+/* ******************************* PAGE 3 ************************************************************* */
+/*#region page3*/
+#page3{
+    /* padding-right: 15%;  */
+    background-color: var(--formclr-2);
+}
+.s11{
+    display: flex;
+}
+.section2{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+}
+.headings2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section2 hr{
+    border:1px solid red;
+    width: 80%;
+    margin-top: 5px;
+}
+.section2>div{
+    /* border: 1px solid black; */
+    color:var(--font-color1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2>div>div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 41.7%;   
+    padding:0 20px;
+    box-shadow: 2px 2px 10px;
+}
+.section2>div>div>p{
+    padding:10px 10px;
+}
+.section2>div>div>h2{
+    padding-top:40px;
+}
+.acrep{
+    background-color:var(--formclr-1);
+    color:var(--font-color1);
+}
+.acrep button{
+    color:var(--font-color1);
+    border: 1px solid var(--font-color1);
+    padding:20px 40px;
+    margin:20px 0;
+}
+.heatrep{
+    background-color: var(--font-color1);
+    color:var(--formclr-1);
+    border:1px solid var(--formclr-1);
+}
+.heatrep button{
+    color:var(--formclr-1);
+    border: 1px solid var(--formclr-1);
+    padding:20px 40px;
+    margin:20px 0;
+}
+/*#endregion page3*/
+
+
+/* ******************************* PAGE 4 ************************************************************* */
+/*#region page4*/
+#page4{
+    color:var(--font-color1);
+    background:linear-gradient(to right,rgba(0,33,96,0.9),rgba(0,33,96,0.9)),  url(/Images/AC\ technician.png)  no-repeat center;
+}
+.s6{
+    display: flex;
+    flex-direction: column;
+}
+.p4sec1{
+    display: flex;
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+.largestproject{
+    display:flex;
+    flex-direction: column;
+    text-align:left;
+    align-items: flex-start;
+}
+.largestproject hr{
+    border:1px solid red;
+    width: 64%;
+    margin-top: 20px;
+}
+.largestproject h1{
+    padding:30px 0px;
+}
+.largestproject p{
+    padding: 30px 70px 30px 0;
+}
+.p4sec1 button{
+    background-color: var(--font-color1);
+    color:var(--formclr-1);
+}
+
+.p4sec2{
+    display: flex;
+    justify-content: space-between;
+    color:var(--font-color1);
+    padding:10px 0;
+    margin-bottom:100px;
+ }
+.p4images{
+    display: flex;
+    /* padding-left: 10px; */
+    align-items: center;
+}
+.p4img1{
+    margin-right:40px;
+}
+.page4 button{
+    margin:0 0px;
+}
+.p4images button{
+    padding:0px;
+    height: 60px;
+    width: 50px;
+    background-color:var(--thmclr-1) ;
+    color:var(--font-color1)
+}
+.p4sec2 button{
+    background-color: var(--font-color1);
+    color:var(--formclr-1);
+    margin-right: 50px;
+}
+/*#endregion page4*/
+
+
+/* ******************************* PAGE 5 ************************************************************* */
+/*#region page5*/
+#page5{
+
+    background-color: var(--formclr-2);
+}
+.s7{
+    display: flex;
+    flex-direction: column;
+}
+.p5sec1{
+    display: flex;
+    justify-content: space-between;
+}
+.p5sec1a{
+    display: flex;
+    flex-direction: column;
+    width:543px;
+}
+.p5sec1a p{
+    padding: 30px 35px 30px 0;
+}
+.p5sec1b {
+    margin: 0 0 0 20px;
+}
+.p5ul{
+    display: flex;
+}
+.p5ul ul{
+    margin:0 50px 0 0;
+}
+.p5ul ul li{
+    background-image: url(/Images/tick.jfif);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 0 40px;
+}
+.p5sec1a button{
+    background-color: var(--thmclr-1);
+    color:var(--font-color1);
+    margin:30px 0 0 0;
+}
+.p5sec2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p5sec2 p{
+    padding:30px 0;
+}
+.clientimg{
+    display:flex;
+    padding:20px 0;
+}
+.clientimg img{
+    padding:0 40px;
+}
+/*#endregion page5*/
+
+/*#endregion MAIN*/
+
+
+
+
+
+
+
